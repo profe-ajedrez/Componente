@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>
+            test
+        </title>
+    </head>
+    <body>
+
+        <div id="main">
+            <p>
+                Noto de texto 1
+            </p>
+            <p class="n1">
+                Noto de texto 2
+            </p>
+            <p class="n1">
+                Noto de texto 3
+            </p>
+            <p class="n1">
+                Noto de texto 4
+            </p>
+        </div>
+
+        <button id="bt1" type="button">botoncio</button>
+
+
+        <script src="componente.js">
+        </script>
+        <script>
+            debugger;
+            var a = __;
+             onWindowReady(function(){
+
+                var bt   = __("#bt1");
+                var ps   = __(".n1");
+                var _b   = __("body");
+                var main = __("#main");
+
+                ps.each(function(e, i, elems){
+                    e.innerHTML = "<span>wena, cambio con numero " + i + "</span>";
+                });
+
+                main.css("background-color" , "#4488dd");
+                main.css("color", "#ffffff");
+                debugger;
+             });
+        </script>
+    </body>
+</html>
